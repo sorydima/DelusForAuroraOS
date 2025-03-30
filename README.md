@@ -1,23 +1,32 @@
-# Delus-PWA-Engine
-Welcome to Delus ® 🐾 A FUTURE BUILT ON COMPLETE DECENTRALIZATION, DISTRIBUTION, AND FEDERATION.
 
-Delus ® 🐾: Interactive Stories & Games
+# DelusForAuroraOS
 
-#### Description:
-Welcome to Delus ® 🐾, your gateway to an immersive world of interactive stories and games. Whether you’re a fan of thrilling adventures, romantic tales, or mind-bending puzzles, Delus ® 🐾 has something for everyone.
+DelusForAuroraOS is a customized version of the Delus PWA engine tailored for **Aurora OS**, enabling decentralized, privacy-first applications within the secure Russian mobile operating system ecosystem.
 
-**Features:**
-- **Interactive Stories:** Dive into captivating narratives where your choices shape the outcome. Each decision you make leads to different paths and endings.
-- **Engaging Games:** Enjoy a variety of games that challenge your mind and keep you entertained for hours.
-- **High-Quality Content:** Explore beautifully crafted stories and games with stunning visuals and immersive soundtracks.
-- **Regular Updates:** Stay tuned for new stories and games added regularly to keep the experience fresh and exciting.
-- **Community Interaction:** Share your experiences, discuss story outcomes, and connect with other Delus ® 🐾 users in our vibrant community.
+## ✨ Features
+- Full compatibility with Aurora OS runtime
+- REChain decentralized identity (DID) integration
+- Local-first data model with edge deployment
+- Encrypted messaging and secure sharing
+- Modular structure for future feature expansion
 
-**Why Delus ® 🐾?**
-Delus ® 🐾 offers a unique blend of storytelling and gameplay, creating an unparalleled interactive experience. Whether you’re looking to unwind with a good story or challenge yourself with a game, Delus ® 🐾 is your perfect companion.
+## 📦 Installation
 
-Download Delus ® 🐾 now and start your adventure today!
+### Requirements
+- Aurora OS device/emulator
+- Flutter 3.13+ / Dart 3.1+
+- REChain CLI (optional)
 
----
+### Setup
+```bash
+git clone https://github.com/sorydima/DelusForAuroraOS.git
+cd DelusForAuroraOS
+flutter pub get
+flutter run -d aurora
+```
 
-Feel free to adjust the descriptions to better match the specific features and unique selling points of Delus.site.
+## 📄 License
+Licensed under the MIT License. See `LICENSE.md` for details.
+
+## 👤 Maintainer
+Developed and maintained by [@sorydima](https://github.com/sorydima).
