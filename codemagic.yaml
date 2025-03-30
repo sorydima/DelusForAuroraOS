@@ -1,0 +1,41 @@
+workflows:
+  ios-native-workflow:
+    name: iOS Native Build Workflow
+    environment:
+      vars:
+        APP_STORE_CONNECT_API_KEY: Encrypted(...)
+        APP_STORE_CONNECT_ISSUER_ID: Encrypted(...)
+        APP_STORE_CONNECT_KEY_ID: Encrypted(...)
+      xcode: latest
+    triggering:
+      events:
+        - push
+        - pull_request
+    scripts:
+      - name: Install Dependencies
+        script: |
+          cd ios
+          pod install
+      - name: Build iOS App
+        script: |
+          xcodebuild -workspace YourApp.xcworkspace \
+          -scheme YourAppScheme \
+          -sdk iphoneos \
+          -configuration Release \
+          -archivePath $CI_WORKSPACE/build/YourApp.xcarchive archive
+
+      - name: Export iOS .ipa
+        script: |
+          xcodebuild -exportArchive \
+          -archivePath $CI_WORKSPACE/build/YourApp.xcarchive \
+          -exportOptionsPlist ExportOptions.plist \
+          -exportPath $CI_WORKSPACE/build
+
+    artifacts:
+      - $CI_WORKSPACE/build/*.ipa
+
+    publishing:
+      app_store_connect:
+        api_key: $APP_STORE_CONNECT_API_KEY
+        issuer_id: $APP_STORE_CONNECT_ISSUER_ID
+        key_id: $APP_STORE_CONNECT_KEY_ID
