@@ -10,7 +10,7 @@
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="38"/>
-        <source>&lt;p&gt;The project provides an example of using WebView on the CEF engine.&lt;/p&gt;</source>
+        <source>&lt;p&gt;The project is designed as a DAO platform with a social layer. In this model, the platform provides a space where community members—often ranging from developers to everyday users—can interact, manage resources, and govern decisions democratically without relying on a central authority. These types of platforms are typically built on blockchain or similar distributed ledger technology to ensure transparency, security, and decentralization.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

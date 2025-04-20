@@ -10,8 +10,8 @@
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="41"/>
-        <source>&lt;p&gt;The project provides an example of using WebView on the CEF engine.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;Проект представляет собой пример использования WebView на движке CEF.&lt;/p&gt;</translation>
+        <source>&lt;p&gt;The project is designed as a DAO platform with a social layer. In this model, the platform provides a space where community members—often ranging from developers to everyday users—can interact, manage resources, and govern decisions democratically without relying on a central authority. These types of platforms are typically built on blockchain or similar distributed ledger technology to ensure transparency, security, and decentralization.&lt;/p&gt;</source>
+        <translation>&lt;p&gt;Проект разработан как платформа DAO с социальным слоем. В этой модели платформа предоставляет пространство, где члены сообщества — часто от разработчиков до обычных пользователей — могут взаимодействовать, управлять ресурсами и принимать решения демократическим путем, не полагаясь на центральный орган. Такие типы платформ обычно строятся на блокчейне или аналогичной технологии распределенного реестра для обеспечения прозрачности, безопасности и децентрализации.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../qml/pages/AboutPage.qml" line="46"/>
