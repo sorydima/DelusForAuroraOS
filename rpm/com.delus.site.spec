@@ -15,7 +15,7 @@ BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  pkgconfig(Qt5Network)
 
 %description
-Welcome to Delus. A FUTURE BUILT ON COMPLETE DECENTRALIZATION, DISTRIBUTION, AND FEDERATION.
+Welcome to Delus. A FUTURE BUILT ON COMPLETE DECENTRALIZATION.
 
 %prep
 %autosetup
