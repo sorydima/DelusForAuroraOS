@@ -1,7 +1,7 @@
 Name:       com.delus.site
 Summary:    Delus
-Version:    3.1.4
-Release:    2
+Version:    3.1.5
+Release:    3
 Group:      Qt/Qt
 License:    BSD-3-Clause
 URL:        https://delus.site
@@ -34,3 +34,4 @@ Welcome to Delus. A FUTURE BUILT ON COMPLETE DECENTRALIZATION.
 %{_datadir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
+%{_datadir}/icons/*
