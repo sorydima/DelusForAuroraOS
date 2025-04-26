@@ -35,3 +35,8 @@ Welcome to Delus. A FUTURE BUILT ON COMPLETE DECENTRALIZATION.
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
 %{_datadir}/icons/*
+
+%changelog
+* Sat Apr 26 2025 Dmitry Sorokin <dim15168250@yandex.ru>
+- Some diffs ...
+
