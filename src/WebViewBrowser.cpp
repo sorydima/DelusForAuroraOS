@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 
     auto application = Aurora::Application::application(argc, argv);
     application->setOrganizationName("com.rechain");
-    application->setApplicationName("Delus");
+    application->setApplicationName("delus");
 
     auto view = Aurora::Application::createView();
 
