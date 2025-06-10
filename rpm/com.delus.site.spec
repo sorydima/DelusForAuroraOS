@@ -1,10 +1,10 @@
 Name:       com.delus.site
 Summary:    Delus
-Version:    3.1.5
-Release:    3
+Version:    3.1.7
+Release:    7
 Group:      Qt/Qt
 License:    BSD-3-Clause
-URL:        https://delus.site
+URL:        https://delus.monster
 Source0:    %{name}-%{version}.tar.bz2
 Requires:   sailfishsilica-qt5 >= 0.10.9
 BuildRequires:  pkgconfig(aurorawebview)
@@ -37,6 +37,6 @@ Welcome to Delus. A FUTURE BUILT ON COMPLETE DECENTRALIZATION.
 %{_datadir}/icons/*
 
 %changelog
-* Sat Apr 26 2025 Dmitry Sorokin <dim15168250@yandex.ru>
-- Some diffs ...
+* Tue Jun 10 2025 Dmitry Sorokin <dim15168250@yandex.ru>
+- We are moving to new infra, nowadays partners with yandex.infra
 

@@ -11,8 +11,8 @@ int main(int argc, char *argv[])
     QGuiApplication::instance()->setAttribute(Qt::AA_ShareOpenGLContexts);
 
     auto application = Aurora::Application::application(argc, argv);
-    application->setOrganizationName("com.rechain");
-    application->setApplicationName("delus");
+    application->setOrganizationName("com.delus");
+    application->setApplicationName("site");
 
     auto view = Aurora::Application::createView();
 

@@ -33,7 +33,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = com.delus.site1.0.0
-DISTDIR = /home/sorydev/DelusForAuroraOS/.tmp/com.delus.site1.0.0
+DISTDIR = /home/sorydev/delus/.tmp/com.delus.site1.0.0
 LINK          = g++
 LFLAGS        = -Wl,--as-needed -specs=/usr/lib/rpm/aurora/pie-pic-ld -Wl,-z,relro,-z,now -Wl,--no-as-needed -Wl,-rpath,'/usr/$$LIB/cef' -Wl,-O1 -Wl,-rpath,/usr/share/com.delus.site/lib
 LIBS          = $(SUBLIBS) -laurorawebview -Wl,--no-as-needed /usr/lib64/cef/libcef.so -Wl,--as-needed -Wl,-rpath,/usr/lib64/cef -pie -rdynamic -lauroraapp -lappdir-cpp -lappdir -lappmanifest-glib -lglib-2.0 -pie -rdynamic -lmdeclarativecache5 -lQt5Quick -lQt5Gui -lQt5Qml -lQt5Network -lQt5Core -lGLESv2 -lpthread 
@@ -439,7 +439,7 @@ WebViewBrowser.o: src/WebViewBrowser.cpp
 
 install_qml: first FORCE
 	@test -d $(INSTALL_ROOT)/usr/share/com.delus.site || mkdir -p $(INSTALL_ROOT)/usr/share/com.delus.site
-	-$(INSTALL_DIR) /home/sorydev/DelusForAuroraOS/qml $(INSTALL_ROOT)/usr/share/com.delus.site/
+	-$(INSTALL_DIR) /home/sorydev/delus/qml $(INSTALL_ROOT)/usr/share/com.delus.site/
 
 uninstall_qml: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/com.delus.site/qml
@@ -458,7 +458,7 @@ uninstall_target: FORCE
 
 install_desktop: first FORCE
 	@test -d $(INSTALL_ROOT)/usr/share/applications || mkdir -p $(INSTALL_ROOT)/usr/share/applications
-	-$(INSTALL_FILE) /home/sorydev/DelusForAuroraOS/com.delus.site.desktop $(INSTALL_ROOT)/usr/share/applications/
+	-$(INSTALL_FILE) /home/sorydev/delus/com.delus.site.desktop $(INSTALL_ROOT)/usr/share/applications/
 
 uninstall_desktop: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/applications/com.delus.site.desktop
@@ -467,7 +467,7 @@ uninstall_desktop: FORCE
 
 install_icon86x86: first FORCE
 	@test -d $(INSTALL_ROOT)/usr/share/icons/hicolor/86x86/apps || mkdir -p $(INSTALL_ROOT)/usr/share/icons/hicolor/86x86/apps
-	-$(INSTALL_FILE) /home/sorydev/DelusForAuroraOS/icons/86x86/com.delus.site.png $(INSTALL_ROOT)/usr/share/icons/hicolor/86x86/apps/
+	-$(INSTALL_FILE) /home/sorydev/delus/icons/86x86/com.delus.site.png $(INSTALL_ROOT)/usr/share/icons/hicolor/86x86/apps/
 
 uninstall_icon86x86: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/icons/hicolor/86x86/apps/com.delus.site.png
@@ -476,7 +476,7 @@ uninstall_icon86x86: FORCE
 
 install_icon108x108: first FORCE
 	@test -d $(INSTALL_ROOT)/usr/share/icons/hicolor/108x108/apps || mkdir -p $(INSTALL_ROOT)/usr/share/icons/hicolor/108x108/apps
-	-$(INSTALL_FILE) /home/sorydev/DelusForAuroraOS/icons/108x108/com.delus.site.png $(INSTALL_ROOT)/usr/share/icons/hicolor/108x108/apps/
+	-$(INSTALL_FILE) /home/sorydev/delus/icons/108x108/com.delus.site.png $(INSTALL_ROOT)/usr/share/icons/hicolor/108x108/apps/
 
 uninstall_icon108x108: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/icons/hicolor/108x108/apps/com.delus.site.png
@@ -485,7 +485,7 @@ uninstall_icon108x108: FORCE
 
 install_icon128x128: first FORCE
 	@test -d $(INSTALL_ROOT)/usr/share/icons/hicolor/128x128/apps || mkdir -p $(INSTALL_ROOT)/usr/share/icons/hicolor/128x128/apps
-	-$(INSTALL_FILE) /home/sorydev/DelusForAuroraOS/icons/128x128/com.delus.site.png $(INSTALL_ROOT)/usr/share/icons/hicolor/128x128/apps/
+	-$(INSTALL_FILE) /home/sorydev/delus/icons/128x128/com.delus.site.png $(INSTALL_ROOT)/usr/share/icons/hicolor/128x128/apps/
 
 uninstall_icon128x128: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/icons/hicolor/128x128/apps/com.delus.site.png
@@ -494,7 +494,7 @@ uninstall_icon128x128: FORCE
 
 install_icon172x172: first FORCE
 	@test -d $(INSTALL_ROOT)/usr/share/icons/hicolor/172x172/apps || mkdir -p $(INSTALL_ROOT)/usr/share/icons/hicolor/172x172/apps
-	-$(INSTALL_FILE) /home/sorydev/DelusForAuroraOS/icons/172x172/com.delus.site.png $(INSTALL_ROOT)/usr/share/icons/hicolor/172x172/apps/
+	-$(INSTALL_FILE) /home/sorydev/delus/icons/172x172/com.delus.site.png $(INSTALL_ROOT)/usr/share/icons/hicolor/172x172/apps/
 
 uninstall_icon172x172: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/icons/hicolor/172x172/apps/com.delus.site.png
@@ -503,9 +503,9 @@ uninstall_icon172x172: FORCE
 
 install_qm: first FORCE
 	@test -d $(INSTALL_ROOT)/usr/share/com.delus.site/translations || mkdir -p $(INSTALL_ROOT)/usr/share/com.delus.site/translations
-	lupdate -noobsolete /home/sorydev/DelusForAuroraOS/src /home/sorydev/DelusForAuroraOS/qml -ts /home/sorydev/DelusForAuroraOS/translations/com.delus.site.ts /home/sorydev/DelusForAuroraOS/translations/ru.auroraos.ChromiumBrowser.ts /home/sorydev/DelusForAuroraOS/translations/ru.auroraos.ChromiumBrowser-ru.ts && mkdir -p translations && [ "/home/sorydev/DelusForAuroraOS" != "/home/sorydev/DelusForAuroraOS" -a 1 -eq 1 ] && cp -af /home/sorydev/DelusForAuroraOS/translations/ru.auroraos.ChromiumBrowser.ts /home/sorydev/DelusForAuroraOS/translations/ru.auroraos.ChromiumBrowser-ru.ts /home/sorydev/DelusForAuroraOS/translations || : ; [ 1 -eq 1 ] && lrelease -nounfinished /home/sorydev/DelusForAuroraOS/translations/ru.auroraos.ChromiumBrowser.ts /home/sorydev/DelusForAuroraOS/translations/ru.auroraos.ChromiumBrowser-ru.ts || :
-	-$(INSTALL_FILE) /home/sorydev/DelusForAuroraOS/translations/ru.auroraos.ChromiumBrowser.qm $(INSTALL_ROOT)/usr/share/com.delus.site/translations/
-	-$(INSTALL_FILE) /home/sorydev/DelusForAuroraOS/translations/ru.auroraos.ChromiumBrowser-ru.qm $(INSTALL_ROOT)/usr/share/com.delus.site/translations/
+	lupdate -noobsolete /home/sorydev/delus/src /home/sorydev/delus/qml -ts /home/sorydev/delus/translations/com.delus.site.ts /home/sorydev/delus/translations/ru.auroraos.ChromiumBrowser.ts /home/sorydev/delus/translations/ru.auroraos.ChromiumBrowser-ru.ts && mkdir -p translations && [ "/home/sorydev/delus" != "/home/sorydev/delus" -a 1 -eq 1 ] && cp -af /home/sorydev/delus/translations/ru.auroraos.ChromiumBrowser.ts /home/sorydev/delus/translations/ru.auroraos.ChromiumBrowser-ru.ts /home/sorydev/delus/translations || : ; [ 1 -eq 1 ] && lrelease -nounfinished /home/sorydev/delus/translations/ru.auroraos.ChromiumBrowser.ts /home/sorydev/delus/translations/ru.auroraos.ChromiumBrowser-ru.ts || :
+	-$(INSTALL_FILE) /home/sorydev/delus/translations/ru.auroraos.ChromiumBrowser.qm $(INSTALL_ROOT)/usr/share/com.delus.site/translations/
+	-$(INSTALL_FILE) /home/sorydev/delus/translations/ru.auroraos.ChromiumBrowser-ru.qm $(INSTALL_ROOT)/usr/share/com.delus.site/translations/
 
 uninstall_qm: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/usr/share/com.delus.site/translations/ru.auroraos.ChromiumBrowser-ru.qm

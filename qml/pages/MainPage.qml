@@ -8,7 +8,7 @@ Page {
     WebView {
         id: webView
 
-        property string currentUrl: "https://delus.site"
+        property string currentUrl: "https://delus.monster"
 
         objectName: "webView"
         anchors {
