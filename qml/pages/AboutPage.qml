@@ -35,7 +35,7 @@ Page {
                 font.pixelSize: Theme.fontSizeSmall
                 textFormat: Text.RichText
                 wrapMode: Text.WordWrap
-                text: qsTr("<p>This is Delus PWA Agent-Client for Aurora Domestic OS. Used for RuStore and REChain.Store.</p>")
+                text: qsTr("<p>This is NataLee 007 ME PWA Agent-Client for Aurora Domestic OS. Used for RuStore and REChain.Store.</p>")
             }
 
             SectionHeader {
@@ -54,7 +54,7 @@ Page {
                 font.pixelSize: Theme.fontSizeSmall
                 textFormat: Text.RichText
                 wrapMode: Text.WordWrap
-                text: qsTr("<p><em>Copyright (c) © 2025 Delus ® 🐾</em></p>")
+                text: qsTr("<p><em>Copyright © 2025 ME. All Rights Reserved. Need help? 🤔 Email us! 👇 A Dmitry Sorokin production. All rights reserved. Powered by REChain. 🪐 Copyright © 2023-2025 REChain, Inc REChain ® is a registered trademark support@rechain.network Please allow anywhere from 1 to 5 business days for E-mail responses! 💌 Our Stats! 👀 At the end of 2023, the number of downloads from the Open-Source Places, Apple AppStore, Google Play Market, and the REChain.Store, namely the Domestic application store from the REChain ®️ brand 🪐, namely the Domestic application store from the brand REChain ®️ 🪐 ✨ exceeded 29 million downloads. 😈 👀</em></p>")
             }
         }
     }

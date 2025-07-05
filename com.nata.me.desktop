@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=com.nata.me
+Exec=/usr/bin/com.nata.me
+Name=ME
+Name[ru]=Визитки!
+
+[X-Application]
+Permissions=Audio;Camera;Documents;Downloads;Internet;Location;Microphone;Music;Pictures;PublicDir;PushNotifications;RemovableMedia;Videos;WebView
+OrganizationName=com.nata
+ApplicationName=me
+

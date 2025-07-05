@@ -5,7 +5,7 @@ import "pages"
 ApplicationWindow {
     id: appWindow
 
-    readonly property string appName: qsTr("Delus")
+    readonly property string appName: qsTr("ME")
 
     objectName: "appWindow"
     allowedOrientations: defaultAllowedOrientations

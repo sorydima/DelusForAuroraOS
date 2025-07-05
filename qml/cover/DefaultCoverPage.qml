@@ -8,6 +8,6 @@ CoverBackground {
         objectName: "coverPlaceholder"
         text: appWindow.appName
         forceFit: true
-        icon.source: Qt.resolvedUrl("../images/com.delus.site.svg")
+        icon.source: Qt.resolvedUrl("../images/com.nata.me.svg")
     }
 }
